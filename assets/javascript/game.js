@@ -43,8 +43,7 @@ $(document).ready(function() {
 
     //First click to choose player character    
     $(".characters").click(function() {
-        console.log("
-        i'm being clicked");
+        console.log("i'm being clicked");
         if (userChoices !== [] && player === undefined) {
             player = $(this).attr("data-food");
             for (item in userChoices) {
