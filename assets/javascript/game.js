@@ -63,6 +63,7 @@ $(document).ready(function() {
                     $("#user-choice").text("");
                 }
             }
+            $("#fight").removeClass("hidden");
         };
     });
 
@@ -78,9 +79,14 @@ $(document).ready(function() {
         $("#pineappleHealth").text("Health: " + pineapple.health);
         if (eval(player).health <= 0) {
             $("#user-choice").text("You lost!");
+            $("#fight").addClass("hidden");
+            $("#restart").removeClass("hidden");
         } else if (eval(currentEnemy).health <= 0) {
             $("#user-choice").text("You won the battle!  Choose a new opponent");
             $(".defeated").append(document.getElementById(currentEnemy));
+            var element = document.getElementById(currentEnemy);
+            element.classList.remove("float-left");
+            element.classList.add("float-right")
             if  (currentEnemy === "taco") {
                 document.getElementById("tacoPic").src="assets/images/taco-lost.jpg";
             }
