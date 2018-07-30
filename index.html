@@ -6,6 +6,7 @@
         <title>Food Fight!</title>
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Courgette|Lobster" rel="stylesheet">
         <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -15,48 +16,48 @@
     <body>
         <h1>Food Fight!</h1>
         <h2>A delicious RPG</h2>
-        <div>
-            <span id="user-choice">Choose your food</span>
+        <div id="choice-section">
+            <span id="user-choice">Choose your food</span><br>
             <div>
                 <div id="taco">
-                    <img class="characters" src="assets/images/taco.png" height="100px" alt="taco" data-food="taco">
-                    <span id="tacoHealth">Health: 120</span>
+                    <img id="tacoPic" class="characters" src="assets/images/taco.png" height="100px" alt="taco" data-food="taco"><br>
+                    <span id="tacoHealth">Health: 120</span><br>
                     <span>A spicy guy, but not very filling</span>
                 </div>
                 <div id="sloppyJoe">
-                    <img class="characters" src="assets/images/sloppy-joe.png" height="80px" alt="sloppy joe" data-food="sloppyJoe">
-                    <span id="sloppyJoeHealth">Health: 140</span>
+                    <img id="sloppyJoePic" class="characters" src="assets/images/sloppy-joe.png" height="80px" alt="sloppy joe" data-food="sloppyJoe"><br>
+                    <span id="sloppyJoeHealth">Health: 140</span><br>
                     <span>A basic sandwich that is not entirely healthy</span>
                 </div>
                 <div id="pineapple">
-                    <img class="characters" src="assets/images/pineapple.jpg" height="150px" alt="pineapple" data-food="pineapple">
-                    <span id="pineappleHealth">Health: 110</span>
+                    <img id="pineapplePic" class="characters" src="assets/images/pineapple.jpg" height="150px" alt="pineapple" data-food="pineapple"><br>
+                    <span id="pineappleHealth">Health: 110</span><br>
                     <span>Sweet and ripe, but pretty rough to touch</span>
                 </div>
                 <div id="pizza">
-                    <img class="characters" src="assets/images/pizza.jpg" height="100px" alt="pizza" data-food="pizza">
-                    <span id="pizzaHealth">Health: 160</span>
+                    <img id="pizzaPic" class="characters" src="assets/images/pizza.jpg" height="100px" alt="pizza" data-food="pizza"><br>
+                    <span id="pizzaHealth">Health: 160</span><br>
                     <span>Always a favorite, and full of grease</span>
                 </div>
                 <div id="iceCream">
-                    <img class="characters" src="assets/images/ice-cream.png" height="100px" alt="ice cream" data-food="iceCream">
-                    <span id="iceCreamHealth">Health: 100</span>
+                    <img id="iceCreamPic" class="characters" src="assets/images/ice-cream.png" height="100px" alt="ice cream" data-food="iceCream"><br>
+                    <span id="iceCreamHealth">Health: 100</span><br>
                     <span>Good stuff, but eat it fast!</span>
                 </div>
             </div>
         </div>
         <div class="player">
-            <span id="currentPlayer">Your food</span>
+            <span id="currentPlayer">Your food</span><br>
         </div>
         <div class="fight-section">
             <button id="fight">FIGHT!</button>
         </div>
         <div class="defender">
-        <span id="current-enemy">Current opponent</span>
+        <span id="current-enemy">Current opponent</span><br>
         </div>
         <button id="restart">Restart</button>
         <div class="defeated">
-            <span>Enemies defeated</span>
+            <span>Enemies defeated</span><br>
         </div>
 
 

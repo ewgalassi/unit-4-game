@@ -81,6 +81,21 @@ $(document).ready(function() {
         } else if (eval(currentEnemy).health <= 0) {
             $("#user-choice").text("You won the battle!  Choose a new opponent");
             $(".defeated").append(document.getElementById(currentEnemy));
+            if  (currentEnemy === "taco") {
+                document.getElementById("tacoPic").src="assets/images/taco-lost.jpg";
+            }
+            else if (currentEnemy === "sloppyJoe") {
+                document.getElementById("sloppyJoePic").src="assets/images/sloppy-joe-lost.jpg";
+            }
+            else if (currentEnemy === "pizza") {
+                document.getElementById("pizzaPic").src="assets/images/pizza-lost.jpg";
+            }
+            else if (currentEnemy === "pineapple") {
+                document.getElementById("pineapplePic").src="assets/images/pineapple-lost.jpg";
+            }
+            else if (currentEnemy === "iceCream") {
+                document.getElementById("iceCreamPic").src="assets/images/ice-cream-lost.jpg";
+            }
             for (item in enemyChoices) {
                 if (enemyChoices[item] === currentEnemy) {
                     enemyDefeated.push(currentEnemy);

@@ -1,0 +1,130 @@
+body {
+    background-image: url("../images/table-background.jpg");
+    background-size: 100%;
+    z-index: 1;
+}
+
+img {
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Courgette", cursive;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Lobster", cursive;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 24px;
+    font-family: "Caveat", cursive;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#user-choice {
+    margin: 15px;
+    width: 500px;
+    text-align: center;
+}
+
+#choice-section {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+#taco {
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#sloppyJoe {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#pineapple {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#pizza {
+    width: 150px;
+    height: 200px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#iceCream {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.player {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.fight-section {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.defender {
+    position: absolute;
+    top: 30%;
+    left: 58%;
+}
+
+#fight {
+    font-size: 24px;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    width: 90px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.defeated {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+#restart {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 24px;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    width: 90px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 4px;
+}
