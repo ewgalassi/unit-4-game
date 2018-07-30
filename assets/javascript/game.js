@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
     var taco = {
         health: 120,
         attack: 22,
@@ -124,4 +124,4 @@ $(document).ready(function() {
     $("#restart").click(function() {
         location.reload();
     })
-})
+// })
