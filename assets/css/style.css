@@ -34,11 +34,13 @@ span {
 
 .float-left {
     float: left;
+    padding-bottom: 25px;
 }
 
 .float-right {
     float: right;
     padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 #user-choice {
@@ -59,7 +61,6 @@ span {
     height: 200px;
     margin: 5px auto;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 #sloppyJoe {
@@ -67,7 +68,6 @@ span {
     height: 200px;
     margin: 5px auto;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 #pineapple {
@@ -75,7 +75,6 @@ span {
     height: 200px;
     margin: 5px auto;
     text-align: center;
-    padding-bottom: 25px;
 }
 
 #pizza {
@@ -83,7 +82,6 @@ span {
     height: 200px;
     margin: 5px auto;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 #iceCream {
@@ -92,7 +90,6 @@ span {
     margin: 5px auto;
     text-align: center;
     margin-top: 20px;
-    padding-bottom: 20px;
 }
 
 .player {
@@ -105,7 +102,7 @@ span {
 .fight-section {
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 48%;
 }
 
 .defender {
@@ -134,8 +131,8 @@ span {
 
 #restart {
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 70%;
+    left: 45%;
     font-size: 24px;
     font-family: "Caveat", cursive;
     font-weight: bolder;
@@ -143,4 +140,21 @@ span {
     height: 50px;
     padding: 4px;
     border-radius: 4px;
+    z-index: 4;
+}
+
+#victory {
+    z-index: 3;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+#defeat {
+    z-index: 3;
+    height: 50%;
+    position: absolute;
+    left: 30%;
+    top: 25%;
 }

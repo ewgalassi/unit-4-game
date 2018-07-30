@@ -31,7 +31,7 @@ $(document).ready(function() {
         health: 100,
         attack: 31,
         baseAttack: 31,
-        counterattack: 15
+        counterattack: 16
     }
     
     var userChoices = ["taco", "sloppyJoe", "pineapple", "pizza", "iceCream"];
@@ -81,6 +81,7 @@ $(document).ready(function() {
             $("#user-choice").text("You lost!");
             $("#fight").addClass("hidden");
             $("#restart").removeClass("hidden");
+            $("#defeat").removeClass("hidden");
         } else if (eval(currentEnemy).health <= 0) {
             $("#user-choice").text("You won the battle!  Choose a new opponent");
             $(".defeated").append(document.getElementById(currentEnemy));
@@ -111,6 +112,9 @@ $(document).ready(function() {
             currentEnemy = undefined;
             if (enemyChoices.length === 0) {
                 $("#user-choice").text("You are victorious!");
+                $("#victory").removeClass("hidden");
+                $("#fight").addClass("hidden");
+                $("#restart").removeClass("hidden");
             }
         };
     });
