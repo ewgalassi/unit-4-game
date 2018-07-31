@@ -1,8 +1,8 @@
 $(document).ready(function() {
     var taco = {
         health: 120,
-        attack: 22,
-        baseAttack: 22,
+        attack: 20,
+        baseAttack: 20,
         counterattack: 14
     }
     
